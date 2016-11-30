@@ -1,0 +1,58 @@
+第4章：Numpy基础数组和矢量计算
+Numpy的ndarray:一种多维数组对象
+每个数组都有一个shape（一个表示各维度大小的元组）和一个dtype（一个用于说明数组数据类型的对象）
+
+创建ndarray：
+array,将输入数据（列表、元组、数组或其他序列类型）转换为ndarray
+asarray,将输入转换为ndarray
+zeros和ones分别可以创建指定长度或者形状的全0或全1数组
+ones_like，以另一个数组为参数，并根据其形状和dtype创建一个全1数组
+zeros_like，类似与ones_like，不过产生的是全0数组而已
+empty可以创建一个没有任何具体值的数组
+arange是Python内置函数range的数组版
+eys和identity，创建一个正方的NxN单位矩阵（对角线为1，其余为0）
+
+代码例子：
+import numpy as np
+a=np.zeros((3,6)) ,则a.ndim=2
+b=np.zeros((3,6,2)),则b.ndim=3
+
+数组和标量之间的运算：
+数组切片是原始数组的视图，数据不会被复制，任何修改都会直接反映到源数组
+因为Numpy处理大的数据集，复制来复制去会产生性能和内存的问题。
+如果想得到副本，就需要显示地赋值，如下
+arr=np.arange(15)
+arr_slice=arr[5:8].copy()
+
+数组转置和轴对换：
+对于高维数组，transpose需要得到一个由轴编号组成的元组才能对这些轴进行转置，其实就是对轴重新排序
+
+arr=np.arange(16).reshape((2,2,4))
+print arr
+print arr.shape
+b=arr.transpose((1,0,2))
+对上面代码的理解如下：
+arr.shape 应该是(2, 2, 4) 意为 2维，2*4矩阵
+arr.transpose(*args) 里面的参数，可以这么理解，他是调换arr.shape的顺序，咱来给arr.shape标一下角标哈，（2[0], 2[1], 4[2]）  [ ] 里是shape的索引，对吧， 
+transpose((1, 0, 2)) 的意思是 按照这个顺序 重新设置shape 也就是 （2[1], 2[0], 4[2]）
+虽然看起来 变换前后的shape都是 2,2,4  ， 但是问题来了，transpose是转置
+shape按照(1,0,2)的顺序重新设置了， array里的所有元素 也要按照这个规则重新组成新矩阵
+比如 8 在arr中的索引是 (1, 0, 0)  那么按照刚才的变换规则，就是 (0, 1, 0) 看看跟你结果arr2的位置一样了吧，依此类推...
+
+swapaxes方法需要接受一对轴编号
+
+
+第5章：pandas入门
+pandas的数据结构介绍：
+1.Series
+pandas的isnull和notnull函数可用于检测缺失数据
+Series最总要的一个功能是：它在算术运算中自动对齐不同索引的数据
+2.DataFrame
+
+
+
+
+
+
+
+

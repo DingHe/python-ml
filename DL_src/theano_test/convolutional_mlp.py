@@ -1,3 +1,4 @@
+#coding=utf-8
 """This tutorial introduces the LeNet5 neural network architecture
 using Theano.  LeNet5 is a convolutional neural network, good for
 classifying images. This tutorial shows how to build the architecture,
@@ -286,11 +287,10 @@ def evaluate_lenet5(learning_rate=0.1, n_epochs=200,
     done_looping = False
 
     while (epoch < n_epochs) and (not done_looping):
-        epoch = epoch + 1
-        for minibatch_index in range(n_train_batches):
+        epoch = epoch + 1  #全部样本的迭代次数
+        for minibatch_index in range(n_train_batches):  #每次迭代计算全部样本的损失，n_train_batches为批次
 
-            iter = (epoch - 1) * n_train_batches + minibatch_index
-
+            iter = (epoch - 1) * n_train_batches + minibatch_index   #计算经过epoch轮后样本的迭代次数
             if iter % 100 == 0:
                 print('training @ iter = ', iter)
             cost_ij = train_model(minibatch_index)
@@ -342,7 +342,7 @@ def evaluate_lenet5(learning_rate=0.1, n_epochs=200,
            ' ran for %.2fm' % ((end_time - start_time) / 60.)), file=sys.stderr)
 
 if __name__ == '__main__':
-    evaluate_lenet5()
+    evaluate_lenet5(n_epochs=500)
 
 
 def experiment(state, channel):

@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+encoding//DL_src/theano_test/convolutional_mlp.py=utf-8
 encoding//DL_src/theano_test/testImage.py=utf-8
 encoding//DL_src/theano_test/testpool.py=utf-8
 encoding//dataAnalysis_src/ch4_numpy/testNmupy.py=utf-8

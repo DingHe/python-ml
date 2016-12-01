@@ -1,2 +1,27 @@
 深度学习指南的地址：
 http://deeplearning.net/tutorial/
+
+支持CUDA的GPU类型：
+https://developer.nvidia.com/cuda-gpus
+
+
+
+windows安装theano教程：
+http://deeplearning.net/software/theano/install_windows.html
+除了安装CUDA，VS2012，还要安装TDM-GCC-64
+
+.theanorc.txt 配置
+[global]
+openmp = False
+device = gpu
+floatX = float32
+allow_input_downcast=True
+[blas]
+ldflags =
+[gcc]
+
+cxxflags = 
+[nvcc]
+compiler_bindir = D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin   
+fastmath = True
+flags =  -arch=sm_30    

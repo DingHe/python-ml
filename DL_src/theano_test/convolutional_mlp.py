@@ -342,7 +342,7 @@ def evaluate_lenet5(learning_rate=0.1, n_epochs=200,
            ' ran for %.2fm' % ((end_time - start_time) / 60.)), file=sys.stderr)
 
 if __name__ == '__main__':
-    evaluate_lenet5(n_epochs=500)
+    evaluate_lenet5(n_epochs=5000,learning_rate=0.01)
 
 
 def experiment(state, channel):

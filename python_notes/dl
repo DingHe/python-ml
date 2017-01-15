@@ -25,3 +25,39 @@ cxxflags =
 compiler_bindir = D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin   
 fastmath = True
 flags =  -arch=sm_30    
+
+ubuntu安装theano教程：见官方文档
+问题：Theano: CNMeM is disabled, CuDNN not available 
+解决办法：
+cnmem package: https://github.com/NVIDIA/cnmem
+% cd $HOME
+% git clone https://github.com/NVIDIA/cnmem.git cnmem
+% cd cnmem
+% mkdir build
+% cd build
+% cmake ..
+% make
+link with cnmem
+The source folder contains a header file include/cnmem.h and the build directory contains the library libcnmem.so, put them into your cuda path: /usr/local/cuda/include,/usr/local/cuda/lib64
+.thenaorc config
+[lib]
+cnmem=1     #注意这里的设置，如果GPU同时用作显示功能就不要设计为1,设置为0.9即可，否则会报内存溢出的问题（itrepresents the start size (in MB or % of total GPU memory) of the memory pool.）
+
+Test
+>>> import theano
+>>> Using gpu device 0: GeForce GTX TITAN X (CNMeM is enabled with initial size: 95.0% of memory, cuDNN 5005)
+
+
+CuDNN支持：CuDNN的配置跟CnMeM一样，到官网下载相应的库和头文件，然后分别拷贝到CUDA相应的目录即可
+[nvcc]
+fastmath = True
+optimizer_including=cudnn
+
+
+
+
+
+
+
+
+

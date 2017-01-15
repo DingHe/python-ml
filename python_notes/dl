@@ -53,8 +53,8 @@ CuDNN支持：CuDNN的配置跟CnMeM一样，到官网下载相应的库和头�
 fastmath = True
 optimizer_including=cudnn
 
-
-
+theano RNN的代码：
+https://github.com/DingHe/is13.git
 
 
 

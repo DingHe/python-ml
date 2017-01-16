@@ -8,7 +8,7 @@ from os.path import isfile
 
 PREFIX = os.getenv('ATISDATA', '')
 
-def download(origin):
+def download(origin):             
     '''
     download the corresponding atis file
     from http://www-etud.iro.umontreal.ca/~mesnilgr/atis/
@@ -58,7 +58,7 @@ if __name__ == '__main__':
     
     w2ne, w2la = {}, {}
     train, test, dic = atisfull()
-    train, _, test, dic = atisfold(1)
+   # train, _, test, dic = atisfold(1)
     
     w2idx, ne2idx, labels2idx = dic['words2idx'], dic['tables2idx'], dic['labels2idx']
     
@@ -75,4 +75,4 @@ if __name__ == '__main__':
         print 'WORD'.rjust(wlength), 'LABEL'.rjust(wlength)
         for wx, la in zip(sw, sl): print idx2w[wx].rjust(wlength), idx2la[la].rjust(wlength)
         print '\n'+'**'*30+'\n'
-        pdb.set_trace()
+       # pdb.set_trace()

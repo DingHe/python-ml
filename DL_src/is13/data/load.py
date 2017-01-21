@@ -57,8 +57,8 @@ if __name__ == '__main__':
     import pdb
     
     w2ne, w2la = {}, {}
-    train, test, dic = atisfull()
-   # train, _, test, dic = atisfold(1)
+    #train, test, dic = atisfull()
+    train, _, test, dic = atisfold(4)
     
     w2idx, ne2idx, labels2idx = dic['words2idx'], dic['tables2idx'], dic['labels2idx']
     
@@ -69,10 +69,12 @@ if __name__ == '__main__':
     test_x,  test_ne,  test_label  = test
     train_x, train_ne, train_label = train
     wlength = 35
-
-    for e in ['train','test']:
+    for e in ['test']:
+    #for e in ['train','test']:
       for sw, se, sl in zip(eval(e+'_x'), eval(e+'_ne'), eval(e+'_label')):
-        print 'WORD'.rjust(wlength), 'LABEL'.rjust(wlength)
-        for wx, la in zip(sw, sl): print idx2w[wx].rjust(wlength), idx2la[la].rjust(wlength)
+        #print 'WORD'.rjust(wlength), 'LABEL'.rjust(wlength)
+        print 'WORD'.rjust(wlength), 'LABEL'.rjust(wlength),'TABLE'.rjust(wlength)
+        #for wx, la in zip(sw, sl): print idx2w[wx].rjust(wlength), idx2la[la].rjust(wlength)
+        for wx,ne, la in zip(sw,se, sl): print idx2w[wx].rjust(wlength), idx2la[la].rjust(wlength),idx2ne[ne].rjust(wlength)
         print '\n'+'**'*30+'\n'
        # pdb.set_trace()

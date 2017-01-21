@@ -1,9 +1,12 @@
 eclipse.preferences.version=1
+encoding//DL_src/is13/rnn/elman.py=utf-8
 encoding//DL_src/theano_test/convolutional_mlp.py=utf-8
 encoding//DL_src/theano_test/testImage.py=utf-8
 encoding//DL_src/theano_test/testpool.py=utf-8
 encoding//dataAnalysis_src/ch4_numpy/testNmupy.py=utf-8
 encoding//dataAnalysis_src/ch5_pandas/testpandas.py=utf-8
+encoding//ftpClient/testftpClient/ftpClient.py=utf-8
+encoding//ftpClient/testftpClient/unzipandmv.py=utf-8
 encoding//python_src/ch26/testClass.py=utf-8
 encoding//python_src/ch27/person.py=utf-8
 encoding//python_src/ch28/SharedData.py=utf-8

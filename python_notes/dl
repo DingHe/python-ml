@@ -56,8 +56,24 @@ optimizer_including=cudnn
 theano RNN的代码：
 https://github.com/DingHe/is13.git
 
+深度学习的硬件配置指南：
+http://timdettmers.com/2015/03/09/deep-learning-hardware-guide/
+教科书：
+http://neuralnetworksanddeeplearning.com
+
+项目：“FacialKeypoint Detection”人脸关键点检测教程http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/
+
+项目：“深度学习聊天机器人”：
+“第一部分”http://www.wildml.com/2016/04/deep-learning-for-chatbots-part-1-introduction/
+“第二部分”http://www.wildml.com/2016/07/deep-learning-for-chatbots-2-retrieval-based-model-tensorflow/
+http://cs224d.stanford.edu
+
+相关课程：“cs294：深度强化学习”http://rll.berkeley.edu/deeprlcourse/
+
+https://deepmind.com/blog/?t=1
 
 
-
+关注最新的研究成果及研究人员：
+如“RE.WORK DL Summit ”，https://www.re-work.co/events/deep-learning-sanfran-2016
 
 

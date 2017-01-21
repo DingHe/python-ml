@@ -1,3 +1,4 @@
+#coding=utf-8
 import theano
 import numpy
 import os
@@ -11,13 +12,13 @@ class model(object):
         '''
         nh :: dimension of the hidden layer
         nc :: number of classes
-        ne :: number of word embeddings in the vocabulary
-        de :: dimension of the word embeddings
-        cs :: word window context size 
+        ne :: number of word embeddings in the vocabulary   词汇表的大小
+        de :: dimension of the word embeddings              词嵌入空间
+        cs :: word window context size                      词内容窗口
         '''
         # parameters of the model
         self.emb = theano.shared(0.2 * numpy.random.uniform(-1.0, 1.0,\
-                   (ne+1, de)).astype(theano.config.floatX)) # add one for PADDING at the end
+                   (ne+1, de)).astype(theano.config.floatX)) # add one for PADDING at the end   emb表示词汇表和词嵌入空间的矩阵
         self.Wx  = theano.shared(0.2 * numpy.random.uniform(-1.0, 1.0,\
                    (de * cs, nh)).astype(theano.config.floatX))
         self.Wh  = theano.shared(0.2 * numpy.random.uniform(-1.0, 1.0,\

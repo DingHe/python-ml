@@ -16,6 +16,7 @@ def gunzip(filename):
     fin=gzip.open(filename,'rb')
     fout=open(filename[0:-3],'wb')
     in2out(fin, fout)
+    os.remove(filename)
     
 def mvfile(srcfile,dsctdir):
     basefilename=os.path.basename(srcfile)

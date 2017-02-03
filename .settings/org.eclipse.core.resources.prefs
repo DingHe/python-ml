@@ -3,6 +3,7 @@ encoding//DL_src/is13/rnn/elman.py=utf-8
 encoding//DL_src/theano_test/convolutional_mlp.py=utf-8
 encoding//DL_src/theano_test/testImage.py=utf-8
 encoding//DL_src/theano_test/testpool.py=utf-8
+encoding//baiduGPStrans/GPStoBaiDuGPS/GPStoBaiDuGPStest.py=utf-8
 encoding//dataAnalysis_src/ch4_numpy/testNmupy.py=utf-8
 encoding//dataAnalysis_src/ch5_pandas/testpandas.py=utf-8
 encoding//ftpClient/testftpClient/ftpClient.py=utf-8

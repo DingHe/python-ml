@@ -85,6 +85,37 @@ http://cs.stanford.edu/people/karpathy/deepimagesent/
 
 RNN文章专题：
 http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/
+http://friskit.me/2016/10/10/translation-wildml-recurrent-neural-networks-tutorial-part-2-implementi/
 http://blog.csdn.net/heyongluoyao8/article/details/48636251
 
+keras中文文档：
+http://keras-cn.readthedocs.io/en/latest/
+机器学习应用的地址：
+http://machinelearningmastery.com/
+
+MNIST各个模型的效果对比值：
+http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html
+
+
+交叉熵的深入理解：
+http://colah.github.io/posts/2015-09-Visual-Information/
+
+WordtoVec:
+http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
+http://mccormickml.com/2016/04/27/word2vec-resources/#alex-minnaars-tutorials
+https://districtdatalabs.silvrback.com/modern-methods-for-sentiment-analysis
+http://web.stanford.edu/class/cs20si/lectures/notes_04.pdf
+http://web.stanford.edu/class/cs20si/syllabus.html
+https://opensource.googleblog.com/2016/11/celebrating-tensorflows-first-year.html
+
+MCMC:
+https://applenob.github.io/
+
+#Implementing a CNN for Text Classification in TensorFlow
+http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/?utm_campaign=Artificial%2BIntelligence%2BWeekly&utm_medium=web&utm_source=Artificial_Intelligence_Weekly_28
+
+
+《Fundamentals of Deep Learning》
+RNN:
+https://r2rt.com/recurrent-neural-networks-in-tensorflow-ii.html
 
